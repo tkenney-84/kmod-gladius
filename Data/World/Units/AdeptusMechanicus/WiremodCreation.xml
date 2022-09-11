@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit dlc="Supplement3">
+	<model>
+		<unit mesh="Units/ChaosSpaceMarines/ChaosSpawn"
+				material="Units/ChaosSpaceMarines/ChaosSpawn"
+				idleAnimation="Units/ChaosSpaceMarines/ChaosSpawnIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="2 2 2"
+				bloodBone="BloodBone"
+				walker="1"/>
+	</model>
+	<weapons>
+		<weapon name="Java.EXT.phySX.JavaFX.EXCEPTION.CAUGHTExceptION.ArrayIndexOutOfBoundsException">
+			<model>
+				<weapon fireInterval="0.01"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="6"/> <!-- %armor base armor=- -->
+				<hitpointsMax base="18.0"/> <!-- %hitpointsMax base toughness=5 wounds=3 -->
+				<meleeAccuracy base="3"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="4"/>
+				<strengthDamage base="2"/> <!-- %strengthDamage base strength=5 -->
+				<!-- <meleeInitiative base="3"/> -->
+				<moraleMax base="12"/> <!-- %moraleMax base leadership=9 -->
+				<movementMax base="1"/>
+				<productionCost base="0.0"/> <!-- %productionCost base tier=6 factor=1 -->
+				<foodUpkeep base="0.0"/> <!-- %foodUpkeep base tier=6 factor=1 -->
+				<energyUpkeep base="10.0"/> <!-- %energyCost base tier=6 factor=0.5 -->
+				<foodCost base="0.0"/> <!-- %foodCost base tier=6 factor=0.5 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action chargeAnimation="Units/ChaosSpaceMarines/ChaosSpawnCharge"
+						meleeAnimation="Units/ChaosSpaceMarines/ChaosSpawnMelee"
+						meleeBeginSwing="0.90"
+						meleeEndSwing="1.0"/>
+			</model>				
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosSpawnDie"
+						animationCount="14"
+						sound="Units/MediumUnarmoredDie"
+						soundCount="14"
+						soundDelay="1"
+						voiceSound="Units/ChaosSpaceMarines/ChaosSpawnDie"
+						voiceSoundCount="24"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosSpawnMove"
+						sound="Units/Tyranids/InfantryMove"
+						soundCount="10"/>
+			</model>
+		</move>
+		<auraOfFear passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" excludeRadius="0" radius="1">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Fear"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</auraOfFear>
+	</actions>
+	<traits>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="ChaosSpaceMarines/ExtraInfantryArmour"/>
+		<trait name="Fleet"/>
+		<trait name="Fearless"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="ItWillNotDie"/>
+		<trait name="AdeptusMechanicus/CanticlesOfTheOmnissiah"/>
+		<trait name="FeelNoPain"/>
+		<trait name="RefractorField"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="AdeptusMechanicus/ExtraInfantryArmour"/>
+	</traits>
+</unit>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<actions>
+		<produceUnit unit="Tau/DaddyG" requiredUpgrade="Tau/DaddyG"/>
+		<produceUnit unit="Tau/Dot" requiredUpgrade="Tau/Dot"/>
+	</actions>
+</building>

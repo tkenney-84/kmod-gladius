@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<upgrade position="3" icon="Units/Tyranids/VenomBrood" dlc="Supplement4">
+	<requiredUpgrades>
+		<upgrade name="Tyranids/Warrior"/>
+	</requiredUpgrades>
+</upgrade>

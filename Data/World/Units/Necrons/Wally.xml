@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<model>
+		<unit mesh="Units/Necrons/CanoptekWraith"
+				material="Units/Necrons/CanoptekWraith"
+				idleAnimation="Units/Necrons/CanoptekWraithIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				scale="1 1 1"
+				explosionsBone="SpineCore"/>
+	</model>
+	<weapons>
+		<weapon name="WitheringStare">
+			<model>
+				<weapon fireInterval="1.0"
+						fireSoundCount="0"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="4"/> <!-- %armor base armor=6+ -->
+				<energyCost base="100.0"/> <!-- %energyCost base tier=4 factor=1 -->
+				<hitpointsMax base="18.0"/> <!-- %hitpointsMax base toughness=3 wounds=3 -->
+				<meleeAccuracy base="12"/> <!-- %meleeAccuracy base weaponSkill=2 -->
+				<meleeAttacks base="1"/>
+				<strengthDamage base="3"/> <!-- %strengthDamage base strength=3 -->
+				<!-- <meleeInitiative base="2"/> -->
+				<itemSlots base="6"/>
+				<levelMax base="9"/>
+				<moraleMax base="12"/> <!-- %moraleMax base leadership=10 -->
+				<movementMax base="5"/>
+				<oreUpkeep base="8.0"/> <!-- %oreUpkeep base tier=4 factor=1 -->
+				<productionCost base="42.0"/> <!-- %productionCost base tier=4 factor=1 -->
+				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=2 -->
+				<influenceUpkeep base="8"/> <!-- %influenceUpkeep base tier=6 factor=2 -->
+				<influenceCost base="80.0"/> <!-- %influenceCost base tier=6 factor=2 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+	<attack>
+			<model>
+				<action	chargeAnimation="Units/Necrons/CanoptekWraithCharge"
+						meleeAnimation="Units/Necrons/CanoptekWraithMelee"
+						meleeBeginSwing="0.2"
+						meleeEndSwing="0.3"/>
+			</model>		
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/Necrons/CanoptekWraithDie"
+						animationCount="2"
+						sound="Units/MediumVehicleDie"
+						soundCount="3"
+						soundDelay="0.3"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action animationSpeed="1.0"/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/Necrons/CanoptekWraithMove"
+						sound="Units/Necrons/CanoptekSpyderMove"
+						soundCount="3"/>
+			</model>
+		</move>
+		<necrodermisRepair consumedActionPoints="0" consumedMovement="0"
+				cooldown="1"
+				name="Necrons/NecrodermisRepair"
+				requiredActionPoints="0">
+			<model>
+				<action sound="Actions/Heal"/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<influenceCost base="60"/>
+					</effects>
+				</modifier>
+				<modifier requiredUpgrade="Necrons/NecrodermisRepair3">
+					<effects>
+						<cooldown max="0"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<selfTarget>
+					<conditions>
+						<unit>
+							<damaged/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpoints add="6"/>
+									</effects>
+								</modifier>
+								<modifier requiredUpgrade="Necrons/NecrodermisRepair2">
+									<effects>
+										<hitpoints add="2"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</necrodermisRepair>
+		<genericUnitAbility cooldown="2"
+				name="Necrons/WallyWhip">
+			<model>
+				<action	sound="Actions/Heal"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<enemy/>
+							<movement greater="-1"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="2" name="Blind"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</genericUnitAbility>
+		<auraOfFear name="Necrons/Inspiring" passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" excludeRadius="0" radius="1">
+							<modifiers>
+								<modifier>
+									<conditions>
+										<unit>
+											<allied/>
+										</unit>
+									</conditions>
+									<effects>
+										<addTrait name="Zealot"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</auraOfFear>
+		<auraOfFear name="Necrons/WallysGaze" passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" excludeRadius="0" radius="1">
+							<modifiers>
+								<modifier>
+									<conditions>
+										<unit>
+											<enemy/>
+										</unit>
+									</conditions>
+									<effects>
+										<addTrait name="Fear"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</auraOfFear>
+	</actions>
+	<traits>
+		<trait name="Necrons/AttackCityBonus" requiredUpgrade="Necrons/AttackCityBonus"/>
+		<trait name="Necrons/EntropicStrike"/>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="Necrons/ExtraVehicleArmour"/>
+		<trait name="Fearless"/>
+		<trait name="Fleet"/>
+		<trait name="Unique"/>
+		<trait name="Necrons/LivingMetal"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="Hero"/>
+	</traits>
+</unit>

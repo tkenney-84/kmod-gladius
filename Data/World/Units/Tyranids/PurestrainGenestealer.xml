@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit dlc="Supplement2">
+	<model>
+		<unit mesh="Units/Tyranids/Hormagaunt"
+				material="Units/Tyranids/Hormagaunt"
+				scale="1.5 1.5 1.5"
+				idleAnimation="Units/Tyranids/HormagauntIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				bloodBone="BloodBone"
+				walker="1"/>
+	</model>
+	<group size="5" rowSize="3" memberDeltaX="90" memberDeltaY="50"/>
+	<weapons>
+		<weapon name="ScythingTalons">
+			<model>
+				<weapon fireInterval="0.4"/>
+			</model>
+		</weapon>
+		<weapon name="RendingClaws">
+			<model>
+				<weapon fireInterval="0.4"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="4"/> <!-- %armor base armor=6+ -->
+				<biomassUpkeep base="4.0"/> <!-- %biomassUpkeep base tier=4 factor=1 -->
+				<biomassCost base="80.0"/> <!-- %biomassCost base tier=4 factor=1 -->
+				<hitpointsMax base="5.0"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
+				<meleeAccuracy base="9"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="2"/>
+				<strengthDamage base="2"/> <!-- %strengthDamage base strength=3 -->
+				<moraleMax base="6"/> <!-- %moraleMax base leadership=5 -->
+				<movementMax base="4"/>
+				<productionCost base="42.0"/> <!-- %productionCost base tier=4 factor=1 -->
+				<rangedAccuracy base="6"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action chargeAnimation="Units/Tyranids/HormagauntCharge"
+						meleeAnimation="Units/Tyranids/HormagauntMelee"
+						meleeBeginSwing="0.3"
+						meleeEndSwing="0.8"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/Tyranids/HormagauntDie"
+						animationCount="2"
+						sound="Units/SmallUnarmoredDie"
+						soundCount="4"
+						soundDelay="0.5"
+						voiceSound="Units/Tyranids/SmallDie"
+						voiceSoundCount="4"/>
+			</model>
+		</die>
+		<move>
+			<model>
+				<action animation="Units/Tyranids/HormagauntMove"
+						sound="Units/Tyranids/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<instinctiveBehaviourOverride consumedActionPoints="0"
+				consumedMovement="0"
+				cooldown="3"
+				name="Tyranids/InstinctiveBehaviourOverride"
+				requiredActionPoints="0">
+			<model>
+				<action sound="Actions/HiveMindBuff"/>
+			</model>
+			<modifiers>
+				<modifier requiredUpgrade="Tyranids/InstinctiveBehaviourOverride2">
+					<effects>
+						<influenceCost mul="-0.5"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<selfTarget>
+					<conditions>
+						<unit>
+							<noTrait name="Tyranids/InstinctiveBehaviourOverride"/>
+							<noTrait name="Tyranids/SynapseLink"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Tyranids/InstinctiveBehaviourOverride" duration="3"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</instinctiveBehaviourOverride>
+		<returnToTheShadows cooldown="2"
+				consumedActionPoints="0" consumedMovement="0"
+				requiredActionPoints="0">
+			<model>
+				<action sound="Actions/ReturnToTheShadows"/>
+			</model>
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="1" name="Shrouded"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</returnToTheShadows>
+		<subterraneanAssault name="Tyranids/SubterraneanAssault"/>
+	</actions>
+	<traits>
+		<trait name="CultAmbush"/>
+		<trait name="Tyranids/BoundingLeap"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="Tyranids/ExtraInfantryArmour"/>
+		<trait name="Fleet"/>
+		<trait name="FuriousCharge" requiredUpgrade="Tyranids/AdrenalGlands"/>
+		<trait name="Tyranids/InfantryUpkeep" requiredUpgrade="Tyranids/InfantryUpkeep"/>
+		<trait name="Tyranids/InstinctiveBehaviour"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="Infiltrate"/>
+		<trait name="StructurallyIneffective"/>
+	</traits>
+</unit>

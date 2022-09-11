@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit spawnCountMax="1">
+	<model>
+		<unit mesh="Units/ChaosSpaceMarines/ChaosSpawn"
+				material="Units/ChaosSpaceMarines/ChaosSpawn"
+				idleAnimation="Units/ChaosSpaceMarines/ChaosSpawnIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="1 1 1"
+				bloodBone="BloodBone"
+				walker="1"/>
+	</model>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="0"/> <!-- %armor base armor=- -->
+				<hitpointsMax base="100.0"/> <!-- %hitpointsMax base toughness=5 wounds=3 -->
+				<meleeAccuracy base="0"/> <!-- %meleeAccuracy base weaponSkill=3 -->
+				<meleeAttacks base="0"/>
+				<strengthDamage base="0"/> <!-- %strengthDamage base strength=5 -->
+				<!-- <meleeInitiative base="3"/> -->
+				<moraleMax base="12"/> <!-- %moraleMax base leadership=9 -->
+				<movementMax base="1"/>
+				<productionCost base="0.0"/> <!-- %productionCost base tier=6 factor=1 -->
+				<foodUpkeep base="0.0"/> <!-- %foodUpkeep base tier=6 factor=1 -->
+				<energyCost base="0.0"/> <!-- %energyCost base tier=6 factor=0.5 -->
+				<foodCost base="0.0"/> <!-- %foodCost base tier=6 factor=0.5 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<actions>
+		<die>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosSpawnDie"
+						animationCount="2"
+						sound="Units/MediumUnarmoredDie"
+						soundCount="4"
+						soundDelay="0.35"
+						voiceSound="Units/ChaosSpaceMarines/ChaosSpawnDie"
+						voiceSoundCount="3"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/ChaosSpawnMove"
+						sound="Units/Tyranids/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<auraOfFear passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" excludeRadius="0" radius="1">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Fear"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</auraOfFear>
+	</actions>
+	<traits>
+		<trait name="Fearless"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="ChaosSpaceMarines/MutatedBeyondReason"/>
+		<trait name="Rage"/>
+		<trait name="ItWillNotDie"/>
+	</traits>
+</unit>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit dlc="Supplement3">
+	<model>
+		<unit mesh="Units/ChaosSpaceMarines/DaemonPrince"
+				material="Units/ChaosSpaceMarines/DaemonPrince"
+				idleAnimation="Units/ChaosSpaceMarines/DaemonPrinceIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="1 1 1"
+				bloodBone="Bone001"
+				walker="1"/>
+	</model>
+	<weapons>
+		<weapon name="CloseCombatWeapon">
+			<model>
+				<weapon fireInterval="0.5"/>
+			</model>
+		</weapon>
+		<weapon name="SensoryOverload" slotName="SensoryOverload" enabled="0">
+			<model>
+				<beamWeapon muzzleBone="Bone014"/>
+			</model>
+		</weapon>
+		<weapon name="BreathOfChaos" slotName="BreathOfChaos" enabled="0">
+			<model>
+				<flamerWeapon muzzleBone=".Mouth"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="9"/> <!-- %armor base armor=3+ -->
+				<hitpointsMax base="20.0"/> <!-- %hitpointsMax base toughness=5 wounds=4 -->
+				<influenceUpkeep base="12.0"/> <!-- %influenceUpkeep base tier=7 factor=2 -->
+				<influenceCost base="300.0"/> <!-- %influenceCost base tier=7 factor=2 -->
+				<itemSlots base="6"/>
+				<levelMax base="12"/>
+				<meleeAccuracy base="12"/> <!-- %meleeAccuracy base weaponSkill=9 -->
+				<meleeAttacks base="3"/>
+				<strengthDamage base="3"/> <!-- %strengthDamage base strength=6 -->
+				<!-- <meleeInitiative base="8"/> -->
+				<moraleMax base="20"/> <!-- %moraleMax base leadership=10 -->
+				<movementMax base="4"/>
+				<productionCost base="50.0"/> <!-- %productionCost base tier=7 factor=1 -->
+				<rangedAccuracy base="10"/> <!-- %rangedAccuracy base ballisticSkill=5 -->
+				<energyUpkeep base="6.0"/> <!-- %energyUpkeep base tier=7 factor=1 -->
+				<energyCost base="100.0"/> <!-- %energyCost base tier=7 factor=0.5 -->
+				<foodCost base="100.0"/> <!-- %foodCost base tier=7 factor=0.5 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseHeroesScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action	chargeAnimation="Units/ChaosSpaceMarines/DaemonPrinceCharge"
+						meleeAnimation="Units/ChaosSpaceMarines/DaemonPrinceMelee"
+						meleeBeginSwing="0.03"
+						meleeEndSwing="0.67"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/DaemonPrinceDie"
+						sound="Units/MediumArmoredDie"
+						soundCount="4"
+						soundDelay="0.8"
+						voiceSound="Units/ChaosSpaceMarines/DaemonPrinceDie"
+						voiceSoundCount="1"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action animationSpeed="1.0"/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/ChaosSpaceMarines/DaemonPrinceMove"
+						sound="Units/AstraMilitarum/BullgrynMove"
+						soundCount="4"/>
+			</model>				
+		</move>
+		<auraOfFear passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" excludeRadius="0" radius="1">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Fear"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</auraOfFear>
+		<hammerOfWrath consumedActionPoints="0" 
+				consumedMovement="0"
+				cooldown="3"
+				requiredActionPoints="0"
+				requiredUpgrade="ChaosSpaceMarines/HammerOfWrath">
+			<model>
+				<action sound="Actions/PsychicBuff"/>
+			</model>
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="HammerOfWrath" duration="1"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</hammerOfWrath>
+		<genericUnitAbility name="ChaosSpaceMarines/PrinceOfChaos" passive="1">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" radius="1">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="ChaosSpaceMarines/PrinceOfChaos"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</genericUnitAbility>
+		<boonOfMutation cooldownMin="4"
+				cooldownMax="2"
+				name="ChaosSpaceMarines/BoonOfMutation"
+				rank="-1"
+				rankMax="2">
+			<model>
+				<action	animation="Units/ChaosSpaceMarines/DaemonPrinceAbility"
+						sound="Actions/ChaosBuff"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<allied/>
+							<trait name="ChaosSpaceMarines/ChampionOfChaos"/>
+							<missingBoonOfChaos/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addRandomBoonOfChaos/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</boonOfMutation>
+		<giftOfContagion cooldown="3"
+				name="ChaosSpaceMarines/GiftOfContagion"
+				rank="-1"
+				rankMax="2">
+			<model>
+				<action	animation="Units/ChaosSpaceMarines/DaemonPrinceAbility"
+						sound="Actions/ChaosDebuff"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="3">
+					<conditions>
+						<unit>
+							<enemy/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Vehicle"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Blighted" durationMin="1" durationMax="3"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</giftOfContagion>
+
+		<mindControl passive="1"
+		name="ChaosSpaceMarines/SlaaneshWhispers">
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Tile" radius="1" excludeRadius="0">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="ChaosSpaceMarines/SlaaneshWhispers"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</mindControl>
+		<enslavement cooldown="3"
+		name="ChaosSpaceMarines/SlaaneshLash">
+			<model>
+				<action animation="Units/ChaosSpaceMarines/DaemonPrinceAbility"
+						sound="Actions/PsychicDebuff"/>
+			</model>			
+			<beginTargets>
+				<target rangeMax="1">
+					<conditions>
+						<unit>
+							<enemy/>
+							<noTrait name="Headquarters"/>
+							<noTrait name="Fortification"/>
+							<noTrait name="Hero"/>
+							<noTrait name="Vehicle"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="Enslaved" duration="3" removeOnSourceDeath="1"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</enslavement>
+		<mindshackleScarabs	cooldown="2"
+				name="ChaosSpaceMarines/SlaaneshGaze"
+				rank="-1"
+				rankMax="2"> <!-- axis aligned billboard scarabs traveling towards unit center -->
+			<model>
+				<action animation="Units/ChaosSpaceMarines/DaemonPrinceAbility"
+						sound="Actions/PsychicDebuff"/>
+			</model>
+			<beginTargets>
+				<target rangeMax="2">
+					<conditions>
+						<unit>
+							<enemy/>
+							<noTrait name="AndTheyShallKnowNoFear"/>
+							<noTrait name="Fearless"/>
+							<noTrait name="Zealot"/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<morale addMin="-5" addMax="-15"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</mindshackleScarabs>
+		
+		<useWeapon cooldown="3"
+				name="ChaosSpaceMarines/SensoryOverload"
+				psychicPower="1"
+				rank="-1"
+				rankMax="2"
+				weaponSlotName="SensoryOverload">
+			<model>
+				<action	animation="Units/ChaosSpaceMarines/DaemonPrinceAbility"
+						beginFire="0.69"
+						endFire="1.5"/>
+			</model>
+			<modifiers>
+				<modifier>
+					<effects>
+						<attacks mulMin="0.0" mulMax="1.0"/>
+					</effects>
+				</modifier>
+			</modifiers>
+		</useWeapon>
+		<useWeapon cooldown="3"
+				elite="1"
+				psychicPower="1"
+				rank="-1"
+				rankMax="0"
+				weaponSlotName="BreathOfChaos">
+			<model>
+				<action	animation="Units/ChaosSpaceMarines/DaemonPrinceAbility2"
+						beginFire="0.69"
+						endFire="2.83"/>
+			</model>		
+		</useWeapon>
+		<levelUp/>
+		<shop/>
+	</actions>
+	<traits>
+		<trait name="Daemon"/>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="ChaosSpaceMarines/ExtraInfantryArmour"/>
+		<trait name="Fearless"/>
+		<trait name="Hero"/>
+		<trait name="Unique"/>
+		<trait name="MonstrousCreature"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="Psyker"/>
+		<trait name="Relentless"/>
+		<trait name="Shrouded"/>
+		<trait name="Smash"/>
+		<trait name="ChaosSpaceMarines/VeteransOfTheLongWar"/>
+	</traits>
+</unit>

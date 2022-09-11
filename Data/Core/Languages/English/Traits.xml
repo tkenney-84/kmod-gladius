@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<entry name="ChaosSpaceMarines/SlaaneshWhispers" value="Slaaneshi Whispers"/>
+	<entry name="ChaosSpaceMarines/SlaaneshWhispersDescription" value="Reduces the morale each turn."/>
+	<entry name="ChaosSpaceMarines/BoIsEasilyDistracted" value="Bo is Easily Distracted"/>
+	<entry name="ChaosSpaceMarines/BoIsEasilyDistractedDescription" value="Reduces accuracy and maximum movement of Bo by 33%. Bo has about as much brainpower as a doorknob. As such, he tends to wander aimlessly and forget his aggression towards his enemies."/>
+	<entry name="Orks/MoreBoyz" value="More Boyz"/>
+	<entry name="Orks/MoreBoyzDescription" value="Doubles the size, cost, and upkeep of ork 'Boy' squads. One a' da bosses good finkers 'fought of a way a' get more boyz fer da WAAAAAAAAAAGH!!!"/>
+	<entry name="Necrons/Dogbane" value="Bane of Dogs"/>
+	<entry name="Necrons/DogbaneDescription" value="Instantly kills dogs. The hounds who would normally rend their enemies flesh bow and buckle under the withering gaze of this felinid."/>
+	<entry name="Dog" value="Is a Dog"/>
+	<entry name="DogDescription" value="This unit is, or contains, dogs. This dog feels an evil presence glaring angerly down upon them... something is coming..."/>
+	<entry name="QuickLearner" value="Quick Learner"/>
+	<entry name="QuickLearnerDescription" value="This unit is remarkably quick to learn from their mistakes. You must adapt your tacitcs twice as fast if you want to catch them off guard."/>
+	<entry name="Immobilizing" value="Immobilizing"/>
+	<entry name="ImmobilizingDescription" value="This weapon is capable of temporarily immobilizing enemy units."/>
+	<entry name="Ambush" value="Ambush"/>
+	<entry name="AmbushDescription" value="This unit is prepared to launch an ambush on any enemies who come near."/>
+	<entry name="SpaceMarines/HealingPurr" value="Healing Purr"/>
+	<entry name="SpaceMarines/HealingPurrDescription" value="This unit is experiencing the healing effects of the nearby felinid."/>
+	<entry name="SpaceMarines/Reorganizing" value="Reorganizing"/>
+	<entry name="SpaceMarines/ReorganizingDescription" value="While orbital deployment has significant benefits in terms of mobility and surprise, the pods are not exactly accurate. This unit is reorganizing themselves after a drop."/>
+	<entry name="ChaosSpaceMarines/Blighting" value="Blighting"/>
+	<entry name="ChaosSpaceMarines/BlightingDescription" value="This weapon is riddled with Nurgles pestilence, blighting anything it wounds."/>
+	<entry name="Trench" value="Entrenched"/>
+	<entry name="TrenchDescription" value="Unit is Entrechned and takes less Ranged Damage"/>
+
+</language>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<actions>
+		<genericUnitAbility name="DigTrenches" icon="Actions/Trench" cooldown="5">
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanIdle"
+						sound="Actions/Construct"/>
+			</model>
+			<modifiers>
+				<modifier visible="0">
+					<effects>
+						<oreCost base="10"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<target rangeMax="0">
+					<conditions>
+						<tile>
+							<noFeatureCategory name="Resource"/>
+							<noFeatureCategory name="WireWeed"/>
+							<land/>
+							<noFeature name="Outpost"/>
+							<noFeature name="Trench"/>
+							<noFeature name="GravityWaves"/>
+						</tile>
+					</conditions>
+					<areas>
+						<area affects="Tile">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addFeature name="Trench"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</target>
+			</beginTargets>
+		</genericUnitAbility>
+	</actions>
+</unit>

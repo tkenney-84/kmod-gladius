@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<factionManager>
+	<colors>
+		<color name="Templar Black" value="0.00 0.00 0.00"/> <!-- #000000 -->
+ 	</colors>
+</factionManager>

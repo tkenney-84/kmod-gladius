@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="ChaosSpaceMarines/SlaaneshWhispers" value="Slaaneshi Whispers"/>
+	<entry name="ChaosSpaceMarines/SlaaneshWhispersDescription" value="Reduces the morale of adjacent enemy units each turn."/>
+	<entry name="ChaosSpaceMarines/SlaaneshLash" value="Slaanesh's Lash"/>
+	<entry name="ChaosSpaceMarines/SlaaneshLashDescription" value="Takes control of the target enemy weakminded unit for three turns."/>
+	<entry name="ChaosSpaceMarines/SlaaneshGaze" value="Slaanesh's Gaze"/>
+	<entry name="ChaosSpaceMarines/SlaaneshGazeDescription" value="Reduces the morale of the target enemy unit."/>
+	<entry name="ChaosSpaceMarines/SlaaneshGazeFlavor" value="The Diabolical Rapist pierces the mind of an enemy unit, granting them visions of untold suffering."/>
+	<entry name="Eldar/constructWebway" value="Construct Webway Gate"/>
+	<entry name="Eldar/constructWebwayDescription" value="Construct a Webway Gate."/>
+	<entry name="Eldar/constructWebwayFlavor" value="Construct a Webway Gate."/>
+	<entry name="AdeptusMechanicus/createHorror" value="Create Indescribable Wiremod Horror"/>
+	<entry name="AdeptusMechanicus/createHorrorDescription" value=":loop \n start this \n goto loop"/>
+	<entry name="AdeptusMechanicus/createHorrorFlavor" value="It will either do nothing, or breach the fabric of reality with astonishing lethality."/>
+	<entry name="Necrons/Inspiring" value="Seriously Inspiring"/>
+	<entry name="Necrons/InspiringDescription" value="Inspires all nearby allied units, granting them the 'Zealot' trait."/>
+	<entry name="Necrons/InspiringFlavor" value="When this felinids allies spot it on the battlefield, even a rag tag squad of badly beaten combatants will find new life."/>
+	<entry name="Necrons/WallysGaze" value="Withering Gaze"/>
+	<entry name="Necrons/WallysGazeDescription" value="Strikes fear into the hearts of adjacent enemies. Adds 'Fear' to them."/>
+	<entry name="Necrons/WallysGazeFlavor" value="Walley's disapproving gaze is enough to make even the biggest dog curl up and whimper."/>
+	<entry name="Tyranids/ReconnectToHiveMind" value="Reassert Hive Mind Control"/>
+	<entry name="Tyranids/ReconnectToHiveMindDescription" value="Asserts control over a neutral Neophyte Hybrid squad indefinitely."/>
+	<entry name="Tyranids/ReconnectToHiveMindFlavor" value="After losing their matriarch during the uprisings on Gladius, the genestealer cult on Gladius Prime has deteriorated, it's members operating off nothing more than their basic instincts. We must reconnect them to the hive mind, so that they may share in the exploitation of this feeble planet."/>
+	<entry name="Necrons/WallyWhip" value="Wally's Tail Whip"/>
+	<entry name="Necrons/WallyWhipDescription" value="Disorients the selected enemy unit, giving them the 'Blind' trait for 2 turns."/>
+	<entry name="Necrons/WallyWhipFlavor" value="Wally has a strange skill, where he can sneak up on enemies, and bat them in the eyes with his tail, effectively blinding them."/>
+	<entry name="SpaceMarines/HealingPurr" value="Healing Purr"/>
+	<entry name="SpaceMarines/HealingPurrDescription" value="Heals nearby allies with a mystic frequency of purring."/>
+	<entry name="SpaceMarines/HealingPurrFlavor" value="Moses has a purr that can be heard across Gladius. It is so powerful, it can heal the wounds of those around him."/>
+	<entry name="SpaceMarines/FelineBlubber" value="Feline Blubber"/>
+	<entry name="SpaceMarines/FelineBlubberDescription" value="Grants the 'Iron Halo' trait to the selected allied unit."/>
+	<entry name="SpaceMarines/FelineBlubberFlavor" value="Moses can selflessly sacrifice a roll of feline fat to protect his beloved allies."/>
+	<entry name="SpaceMarines/SupportAnimal" value="Unlicensed Support Animal"/>
+	<entry name="SpaceMarines/SupportAnimalDescription" value="Instantly restores the morale of the selected allied unit."/>
+	<entry name="SpaceMarines/SupportAnimalFlavor" value="Although Moses is not a LICENSED support animal, they make a very good mammalian therapist."/>
+	<entry name="AstraMilitarum/ConstructAquilaMacroCannon" value="<string name='Units/AstraMilitarum/AquilaMacroCannon'/>"/>
+	<entry name="AstraMilitarum/ConstructAquilaMacroCannonDescription" value="<string name='Units/AstraMilitarum/AquilaMacroCannonDescription'/>"/>
+	<entry name="AstraMilitarum/ConstructAquilaMacroCannonFlavor" value="<string name='Units/AstraMilitarum/AquilaMacroCannonFlavor'/>"/>
+	<entry name="DigTrenches" value="Dig Trenches"/>
+	<entry name="DigTrenchesFalvor" value="For seven terrible years the Siege regiments of the Imperial Guard carried out their onerous duty, manning the hundreds of miles of trenches and fortified positions that served to contain the arch-heretic’s forces. Success was measured in yards of ground gained, and every inch of that deadly ground was bought with the blood and lives of men. - From the official history of the Kaiserschlect Campaign, M41.745"/>
+
+</language>

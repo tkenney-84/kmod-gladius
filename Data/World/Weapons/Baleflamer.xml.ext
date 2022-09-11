@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weapon>
+	<modifiers>
+		<modifier>
+			<effects>
+				<rangedArmorPenetration min="2" max="2"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</weapon>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait alwaysVisible="1">
+	<modifiers>
+		<modifier>
+			<conditions>
+				<encounter>
+					<opponent>
+						<trait name="Dog"/>
+					</opponent>
+				</encounter>
+			</conditions>
+			<effects>
+				<damage add="999"/>
+				<rangedAttacks add="999"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

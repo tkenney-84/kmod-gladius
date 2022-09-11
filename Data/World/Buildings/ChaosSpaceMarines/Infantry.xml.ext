@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<actions>
+		<produceUnit unit="ChaosSpaceMarines/NoiseMarine" requiredUpgrade="ChaosSpaceMarines/Havoc"/>
+		<produceUnit unit="ChaosSpaceMarines/PlagueMarine" requiredUpgrade="ChaosSpaceMarines/Havoc"/>
+	</actions>
+</building>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<actions>
+		<produceUnit unit="Necrons/Wally" requiredUpgrade="Necrons/Wally"/>
+	</actions>
+</building>

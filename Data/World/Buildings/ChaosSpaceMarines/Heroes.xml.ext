@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<actions>
+		<produceUnit unit="ChaosSpaceMarines/JoergSprave" requiredUpgrade="ChaosSpaceMarines/JoergSprave"/>
+		<produceUnit unit="ChaosSpaceMarines/Bo" requiredUpgrade="ChaosSpaceMarines/Bo"/>
+		<produceUnit unit="ChaosSpaceMarines/JayCordich" requiredUpgrade="ChaosSpaceMarines/JayCordich"/>
+		<produceUnit unit="ChaosSpaceMarines/X" requiredUpgrade="ChaosSpaceMarines/X"/>
+	</actions>
+</building>

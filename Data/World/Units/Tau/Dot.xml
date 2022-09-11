@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit faction="Tau" spawnDistanceMin="6">
+	<model>
+		<unit mesh="Units/Neutral/KrootHound"
+				material="Units/Neutral/KrootHound"
+				scale="2.0 2.0 2.0"
+				idleAnimation="Units/Neutral/KrootHoundIdle"
+				idleAnimationCount="4"
+				idleContinuously="1"
+				normalWeight="0.1"
+				bloodBone="ChestBone"
+				walker="1"/>
+	</model>
+	<weapons>
+		<weapon name="ManicSpasm">
+			<model>
+				<weapon fireInterval="1.0"
+						fireSoundCount="0"/>
+			</model>
+		</weapon>
+		<weapon name="DeceitfulApproach">
+			<model>
+				<weapon fireInterval="1.0"
+						fireSoundCount="0"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="0"/> <!-- %armor base armor=- -->
+				<foodUpkeep base="8.0"/> <!-- %foodUpkeep base tier=4 factor=1 -->
+				<foodCost base="30.0"/> <!-- %foodCost base tier=4 factor=1 -->
+				<hitpointsMax base="24.0"/> <!-- %hitpointsMax base toughness=3 wounds=1 -->
+				<meleeAccuracy base="9"/> <!-- %meleeAccuracy base weaponSkill=4 -->
+				<meleeAttacks base="2"/>
+				<!-- <meleeInitiative base="5"/> -->
+				<itemSlots base="6"/>
+				<levelMax base="9"/>
+				<moraleMax base="4"/> <!-- %moraleMax base leadership=5 -->
+				<movementMax base="5"/>
+				<productionCost base="24.0"/> <!-- %productionCost base tier=4 factor=1 -->
+				<strengthDamage base="2"/> <!-- %strengthDamage base strength=3 -->
+				<influenceUpkeep base="8"/> <!-- %influenceUpkeep base tier=6 factor=2 -->
+				<influenceCost base="30.0"/> <!-- %influenceCost base tier=6 factor=2 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<actions>
+		<attack>
+			<model>
+				<action chargeAnimation="Units/Neutral/KrootHoundCharge"
+						meleeAnimation="Units/Neutral/KrootHoundMelee"
+						meleeBeginSwing="0.5"
+						meleeEndSwing="1.0"
+						meleeDefenseAnimation="Units/Neutral/KrootHoundMelee"
+						meleeDefenseBeginSwing="0.5"
+						meleeDefenseEndSwing="1.0"
+						meleeSound="Units/Neutral/KrootHoundAttack"
+						meleeSoundCount="2"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/Neutral/KrootHoundDie"
+						sound="Units/Neutral/KrootHoundDie"
+						soundCount="2"
+						soundDelay="0.5"/>
+			</model>
+		</die>
+		<move>
+			<model>
+				<action animation="Units/Neutral/KrootHoundMove"
+						sound="Units/Neutral/KrootHoundMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<psychicScream cooldown="2"
+				name="Tyranids/PsychicScream"
+				rank="-1"
+				rankMax="2">
+			<model>
+				<action animation="Units/Neutral/KrootHoundDie"
+						sound="Units/Neutral/KrootHoundDie"
+						soundCount="2"
+						soundDelay="0.5"/>
+			</model>
+			<modifiers>
+				<modifier>
+					<effects>
+						<damage mulMin="0.0" mulMax="1.0"/>
+					</effects>
+				</modifier>
+			</modifiers>
+			<beginTargets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit" radius="1" excludeRadius="0">
+							<modifiers>
+								<modifier>
+									<conditions>
+										<unit>
+											<enemy/>
+										</unit>
+									</conditions>
+									<effects>
+										<weaponDamage weapon="PsychicScream"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</beginTargets>
+		</psychicScream>
+	</actions>
+	<traits>
+		<trait name="Fleet"/>
+		<trait name="Dog"/>
+		<trait name="Hero"/>
+		<trait name="Unique"/>
+		<trait name="Infiltrate"/>
+		<trait name="MoveThroughCover"/>
+		<trait name="ForestStealth"/>
+		<trait name="Fearless"/>
+		<trait name="Deathshriek"/>
+	</traits>
+</unit>

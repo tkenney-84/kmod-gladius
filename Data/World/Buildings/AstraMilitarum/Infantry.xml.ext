@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<actions>
+		<produceUnit unit="AstraMilitarum/GoldenHelmet"/>
+		<produceUnit unit="AstraMilitarum/Squats" requiredUpgrade="AstraMilitarum/Squats"/>
+	</actions>
+</building>

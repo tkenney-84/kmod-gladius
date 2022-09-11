@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu:menuScreen extends="HUD">
+	<container layout="Relative" layout.alignment="BottomLeft" margin="8 0; 0 4" preferredSize="FillParent FillParent">
+		<label name="versionLabel" style="<style name='ShadowedHeading' color='GUI/Gray'/>"/>
+	</container>
+	<container layout="Relative" layout.alignment="BottomLeft" margin="8 0; 0 30" preferredSize="FillParent FillParent">
+		<label style="<style name='ShadowedHeading' color='GUI/Gray'/>" name="continue" caption="<string name='GUI/KMod'/>"/>
+	</container>
+</menu:menuScreen>

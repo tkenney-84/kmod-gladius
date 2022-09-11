@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wildlife>
+	<packs>
+		<pack>
+			<unit type="Neutral/Blob"/>
+		</pack>
+	</packs>
+</wildlife>

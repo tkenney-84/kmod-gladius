@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trait alwaysVisible="1" category="Debuff">
+	<modifiers>
+		<modifier>
+			<effects>
+				<attacks mul="-0.5"/>
+				<hitpointsMax mul="-0.5"/>
+				<movementMax base="1"/>
+			</effects>
+		</modifier>
+	</modifiers>
+</trait>

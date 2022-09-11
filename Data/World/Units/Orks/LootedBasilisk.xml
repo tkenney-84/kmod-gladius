@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<model>		
+		<unit mesh="Units/AstraMilitarum/Basilisk"
+				material="Units/AstraMilitarum/Basilisk"
+				idleAnimation="Units/AstraMilitarum/BasiliskIdle"
+				idleAnimationCount="2"
+				scale="1.2 1.2 1.2"
+				explosionsBone="Hull001"
+				uvAnimated="1"/>
+	</model>
+	<weapons>
+		<weapon name="OrkEarthshakerCannon">
+			<model>
+				<projectileWeapon muzzleBone=".Muzzle0"
+						fireInterval="1.0"
+						effectFaceWeight="0"/>
+			</model>		
+		</weapon>
+		<weapon name="BigShoota">
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/HydraHeavyBolter"
+						material="Weapons/AstraMilitarum/HydraHeavyBolter"
+						bone=".Attachment0"
+						muzzleBone=".BolterMuzzle0"/>
+			</model>
+		</weapon>
+		<weapon name="None" enabled="0">
+			<model>
+				<weapon mesh="Weapons/AstraMilitarum/BasiliskLid"
+						material="Weapons/AstraMilitarum/BasiliskLid"
+						bone=".Attachment1"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor base="8"/> <!-- %armor base armor=12/10/10 -->
+				<hitpointsMax base="30.0"/> <!-- %hitpointsMax base armor=12/10/10 wounds=3 -->
+				<oreUpkeep base="5.0"/> <!-- %oreUpkeep base tier=7 factor=1 -->
+				<oreCost base="80.0"/> <!-- %oreCost base tier=7 factor=1 -->
+				<moraleMax base="8"/> <!-- %moraleMax base leadership=7 -->
+				<movementMax base="3"/>
+				<productionCost base="42.0"/> <!-- %productionCost base tier=7 factor=1 -->
+				<rangedAccuracy base="4"/> <!-- %rangedAccuracy base ballisticSkill=3 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseSupportScore base="1.0"/>
+				<increaseVehiclesScore base="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action	animation="Units/AstraMilitarum/BasiliskAttack"
+						beginFire="0.15"
+						endFire="2.4"/>
+			</model>
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/AstraMilitarum/BasiliskDie"
+						sound="Units/MediumVehicleDie"
+						soundCount="3"
+						soundDelay="0.2"/>
+			</model>
+		</die>
+		<move>
+			<model>
+				<action animation="Units/AstraMilitarum/BasiliskMove"
+						sound="Units/AstraMilitarum/TankMove"
+						soundCount="3"/>
+			</model>
+		</move>
+	</actions>
+	<traits>
+		<trait name="ExtraVehicleArmour" requiredUpgrade="Orks/ExtraVehicleArmour"/>
+		<trait name="GrotRiggers" requiredUpgrade="Orks/GrotRiggers"/>
+		<trait name="Orks/MightMakesRight"/>
+		<trait name="Orks/GreenTideHealing"/>
+		<trait name="OrkoidFungusBonusHealingRate" requiredUpgrade="Orks/OrkoidFungusBonusHealingRate"/>
+		<trait name="Orks/Scavenger"/>
+		<trait name="OpenTopped"/>
+		<trait name="Tank"/>
+		<trait name="Vehicle"/>
+	</traits>
+</unit>

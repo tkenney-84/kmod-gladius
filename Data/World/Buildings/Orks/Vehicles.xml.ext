@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<actions>
+		<produceUnit unit="Orks/LootedBasilisk" requiredUpgrade="Orks/LootedBasilisk"/>
+	</actions>
+</building>

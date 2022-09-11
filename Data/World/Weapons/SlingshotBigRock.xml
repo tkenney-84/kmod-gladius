@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weapon>
+	<model>
+		<weapon fireSound="Weapons/CloseCombatWeapon"
+				fireSoundCount="3"/>
+	</model>
+	<modifiers>
+		<modifier>
+			<effects>
+				<attacks add="1"/>
+				<rangedArmorPenetration add="12"/> <!-- %rangedArmorPenetration add armorPiercing=3 -->
+				<rangedDamage add="15"/> <!-- %rangedDamage add strength=8 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<traits>
+		<trait name="HeavyWeapon"/>
+		<trait name="IgnoresCover"/>
+		<trait name="Armourbane"/>
+	</traits>
+</weapon>

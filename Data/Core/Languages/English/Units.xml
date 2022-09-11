@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<entry name="Orks/LootedBasilisk" value="Looted Basilisk"/>
+	<entry name="Orks/LootedBasiliskDescription" value="Captured Imperial Artillery Unit"/>
+	<entry name="Orks/LootedBasiliskFlavor" value="When orks find a big gun with treads in still mostly functional condition, you better bet they have the grotz on it in no time. This captured basilisk sports shiny new armor and a louder gun but sacrifices a great deal of accuracy and mobility."/>
+	<entry name="Orks/Grom" value="Grom da Paunch"/>
+	<entry name="Orks/GromDescription" value="Morbidly Obese Goblin Boss"/>
+	<entry name="Orks/GromFlavor" value="When a goblin survives consuming troll meat, then crusades several continents, exterminating several species, you should be afraid when he leaks into your universe."/>
+	<entry name="AstraMilitarum/GoldenHelmet" value="Golden Helmet Conscript"/>
+	<entry name="AstraMilitarum/GoldenHelmetDescription" value="Mercenary Conscripts of the 120th Golden Helmets"/>
+	<entry name="AstraMilitarum/GoldenHelmetFlavor" value="Why would Robert Gillman be interested in supporting the guard on a ravaged imperial world?"/>
+	<entry name="Tyranids/Dactylis" value="Dactylis"/>
+	<entry name="Tyranids/DactylisDescription" value="Long Range Siege Artillery"/>
+	<entry name="Tyranids/DactylisFlavor" value="A monstrous tyranid unit purposed with the levelling of enemy cities and units alike."/>
+	<entry name="ChaosSpaceMarines/X" value="The Diabolical Rapist"/>
+	<entry name="ChaosSpaceMarines/XDescription" value="Daemon Prince of Slaanesh"/>
+	<entry name="ChaosSpaceMarines/XFlavor" value="A horrible abomination upon the face of Gladius Prime. This imperium would not even aknowledge it's name, instead addressing it as a string of numbers."/>
+	<entry name="Eldar/Bonesinger" value="Bonesinger"/>
+	<entry name="Eldar/BonesingerDescription" value="Builder Unit"/>
+	<entry name="Eldar/BonesingerFlavor" value="Using a song which summons the material, 'Wraithbone,' the Bonsinger summons grand constructions useful to the Aeldari cause."/>
+	<entry name="ChaosSpaceMarines/JayCordich" value="Jay Kordich"/>
+	<entry name="ChaosSpaceMarines/JayCordichDescription" value="Father of Juicing"/>
+	<entry name="ChaosSpaceMarines/JayCordichFlavor" value="After mastering the dark arts of juicing, Jay Kordich acsended with the favor of Slaanesh. Jay is no longer just the father of juicing... but the GOD."/>
+	<entry name="Tau/DaddyG" value="Daddy G"/>
+	<entry name="Tau/DaddyGDescription" value="Effective vs. Morale; Effective vs. All"/>
+	<entry name="Tau/DaddyGFlavor" value="Operating under the banner of the 120th Golden Helmets, Daddy G inspires burning fear in the enemies unfortunate enough to encounter him on the battlefield."/>
+	<entry name="Neutral/Blob" value="Miserable Flesh Pile"/>
+	<entry name="Neutral/BlobDescription" value="A helpless and miserable pile of flesh."/>
+	<entry name="Neutral/NeutralFlavor" value="Was it a mistake during a chaotic summoning ritual? A horrible abomination made by the adeptus mechanicus? Who knows. It is a seething pile of miserable flesh that is in your way. Your men are too afraid to go near it."/>
+	<entry name="Tau/Dot" value="Dot"/>
+	<entry name="Tau/DotDescription" value="Who's dog is this? Why is it just sitting over th-AAAAAAAAHHHHH..."/>
+	<entry name="Tau/DotFlavor" value="This is Dot. The master of bugging the shit out of Kenney. Also the master of pretending to sit someplace then dragging her sorry ass to another."/>
+	<entry name="ChaosSpaceMarines/Bo" value="Bo"/>
+	<entry name="ChaosSpaceMarines/BoDescription" value="Sir... there is a dog wandering around the perimeter. Wha- no... no it's already taken out the armored response..."/>
+	<entry name="ChaosSpaceMarines/BoFlavor" value="Bo is an interesting creature. With the brain power of a pencil, he is terrifyingly unaware of reality. Whenever he gives rise to a purpose, however, those who stand in his way will be cut down with confused fury."/>
+	<entry name="AdeptusMechanicus/Kenney" value="K3nN37"/>
+	<entry name="AdeptusMechanicus/KenneyDescription" value="Death doesn't pay the bills. Nothing will get in the way of my duties."/>
+	<entry name="AdeptusMechanicus/KenneyFlavor" value="A creature who's free time is distributed equally among the population. He knows nothing but work and endless toil. He brings in enough to keep people fed and afford some basic amenities. The rest of his money and time is donated to the goals of others."/>
+	<entry name="AdeptusMechanicus/WiremodCreation" value="Wiremod Horror"/>
+	<entry name="AdeptusMechanicus/WiremodCreationDescription" value="Wha- what is that? I can hardly see it... did it just... disappear? What's that sticking out of the grou-"/>
+	<entry name="AdeptusMechanicus/WiremodCreationFlavor" value="A horrendous bi-product of the maddening experience of computer science and a creature that knows no joy."/>
+	<entry name="ChaosSpaceMarines/JoergSprave" value="Joerg Sprave"/>
+	<entry name="ChaosSpaceMarines/JoergSpraveDescription" value="Barbarian Slingshot"/>
+	<entry name="ChaosSpaceMarines/JoergSpraveFlavor" value="LET ME SHOW YOU IT'S FEATURES"/>
+	<entry name="Necrons/Wally" value="Wally"/>
+	<entry name="Necrons/WallyDescription" value="How the hell is there a felinid on Gladius Pri-"/>
+	<entry name="Necrons/WallyFlavor" value="A seemingly insignificant member of the fighting force, this little felinid will drive its allies to success and cut down all hounds who stand in its way."/>
+	<entry name="Tyranids/PurestrainGenestealer" value="Purestrain Genestealer"/>
+	<entry name="Tyranids/PurestrainGenestealerDescription" value="The infestation of Gladius Prime is complete. The cult is ready to unleash it's most powerful assets..."/>
+	<entry name="Tyranids/PurestrainGenestealerFlavor" value="Being the final stage in a genestealer cults infestation, these purestrain genestealers are much more advanced than their hybrid bretheren. They are capable of tearing even a terminator to shreds in seconds."/>
+	<entry name="Tyranids/VenomBrood" value="Venom Brood"/>
+	<entry name="Tyranids/VenomBroodDescription" value="Anti-Armor Tyranid Ranged Unit"/>
+	<entry name="Tyranids/VenomBroodFlavor" value="Equipped with powerful venom cannons, Venom Broods can cut through enemy armor like knives through hot butter."/>
+	<entry name="SpaceMarines/Moses" value="Moses"/>
+	<entry name="SpaceMarines/MosesDescription" value="A thick little kitty."/>
+	<entry name="SpaceMarines/MosesFlavor" value="Moses is a fantastic unregistered support animal, escape artist, song critic, student, and gourmand."/>
+	<entry name="ChaosSpaceMarines/NoiseMarine" value="Noise Marines"/>
+	<entry name="ChaosSpaceMarines/NoiseMarineDescription" value="Anti-Infantry Chaos Havoc Unit"/>
+	<entry name="ChaosSpaceMarines/NoiseMarineFlavor" value="Equipped with devastating sonic blasters, these marines are capable of destroying entire regiments of men by blasting the very flesh from their bone."/>
+	<entry name="ChaosSpaceMarines/PlagueMarine" value="Plague Marines"/>
+	<entry name="ChaosSpaceMarines/PlagueMarineDescription" value="Anti-Tank Chaos Havoc Unit"/>
+	<entry name="ChaosSpaceMarines/PlagueMarineFlavor" value="Equipped with heavy bolters and a krak missile launcher, these plague marines are capable of bringing Nurgles rot to any of their foes."/>
+	<entry name="AstraMilitarum/AquilaMacroCannon" value="<string name='Units/SpaceMarines/AquilaMacroCannon'/>"/>
+	<entry name="AstraMilitarum/AquilaMacroCannonDescription" value="<string name='Units/SpaceMarines/AquilaMacroCannonDescription'/>"/>
+	<entry name="AstraMilitarum/AquilaMacroCannonFlavor" value="<string name='Units/SpaceMarines/AquilaMacroCannonFlavor'/>"/>
+	<entry name="AstraMilitarum/Squats" value="Squats"/>
+	<entry name="AstraMilitarum/SquatsDescription" value="In war, the Squats used squads of motorcycles supported by massive artillery barrages from outlandishly large super-heavy tracked vehicles."/>
+	<entry name="AstraMilitarum/SquatsFlavor" value="Do not underestimate the Squats. They survived for millennia cut off from the Imperium and assailed from all sides. Their determination and resilience is an example to all."/>
+
+</language>

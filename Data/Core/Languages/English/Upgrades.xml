@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<entry name="Orks/LootedBasilisk" value="<string name='Units/Orks/LootedBasilisk'/>"/>
+	<entry name="Orks/LootedBasiliskDescription" value="<string name='Units/Orks/LootedBasiliskDescription'/>"/>
+	<entry name="Orks/LootedBasiliskFlavor" value="<string name='Units/Orks/LootedBasiliskFlavor'/>"/>
+	<entry name="Orks/Grom" value="<string name='Units/Orks/Grom'/>"/>
+	<entry name="Orks/GromDescription" value="<string name='Units/Orks/GromDescription'/>"/>
+	<entry name="Orks/GromFlavor" value="<string name='Units/Orks/GromFlavor'/>"/>
+	<entry name="Tyranids/Dactylis" value="<string name='Units/Tyranids/Dactylis'/>"/>
+	<entry name="Tyranids/DactylisDescription" value="<string name='Units/Tyranids/DactylisDescription'/>"/>
+	<entry name="Tyranids/DactylisFlavor" value="<string name='Units/Tyranids/DactylisFlavor'/>"/>
+	<entry name="AdeptusMechanicus/Kenney" value="<string name='Units/AdeptusMechanicus/Kenney'/>"/>
+	<entry name="AdeptusMechanicus/KenneyDescription" value="<string name='Units/AdeptusMechanicus/KenneyDescription'/>"/>
+	<entry name="AdeptusMechanicus/KenneyFlavor" value="<string name='Units/AdeptusMechanicus/KenneyFlavor'/>"/>
+	<entry name="ChaosSpaceMarines/X" value="<string name='Units/ChaosSpaceMarines/X'/>"/>
+	<entry name="ChaosSpaceMarines/XDescription" value="<string name='Units/ChaosSpaceMarines/XDescription'/>"/>
+	<entry name="ChaosSpaceMarines/XFlavor" value="<string name='Units/ChaosSpaceMarines/XFlavor'/>"/>
+	<entry name="ChaosSpaceMarines/JoergSprave" value="<string name='Units/ChaosSpaceMarines/JoergSprave'/>"/>
+	<entry name="ChaosSpaceMarines/JoergSpraveDescription" value="<string name='Units/ChaosSpaceMarines/JoergSpraveDescription'/>"/>
+	<entry name="ChaosSpaceMarines/JoergSpraveFlavor" value="<string name='Units/ChaosSpaceMarines/JoergSpraveFlavor'/>"/>
+	<entry name="ChaosSpaceMarines/Bo" value="<string name='Units/ChaosSpaceMarines/Bo'/>"/>
+	<entry name="ChaosSpaceMarines/BoDescription" value="<string name='Units/ChaosSpaceMarines/BoDescription'/>"/>
+	<entry name="ChaosSpaceMarines/BoFlavor" value="<string name='Units/ChaosSpaceMarines/BoFlavor'/>"/>
+	<entry name="ChaosSpaceMarines/JayCordich" value="<string name='Units/ChaosSpaceMarines/JayCordich'/>"/>
+	<entry name="ChaosSpaceMarines/JayCordichDescription" value="<string name='Units/ChaosSpaceMarines/JayCordichDescription'/>"/>
+	<entry name="ChaosSpaceMarines/JayCordichFlavor" value="<string name='Units/ChaosSpaceMarines/JayCordichFlavor'/>"/>
+	<entry name="Tau/Dot" value="<string name='Units/Tau/Dot'/>"/>
+	<entry name="Tau/DotDescription" value="<string name='Units/Tau/DotDescription'/>"/>
+	<entry name="Tau/DotFlavor" value="<string name='Units/Tau/DotFlavor'/>"/>
+	<entry name="Tau/DaddyG" value="<string name='Units/Tau/DaddyG'/>"/>
+	<entry name="Tau/DaddyGDescription" value="<string name='Units/Tau/DaddyGDescription'/>"/>
+	<entry name="Tau/DaddyGFlavor" value="<string name='Units/Tau/DaddyGFlavor'/>"/>
+	<entry name="Necrons/Wally" value="<string name='Units/Necrons/Wally'/>"/>
+	<entry name="Necrons/WallyDescription" value="<string name='Units/Necrons/WallyDescription'/>"/>
+	<entry name="Necrons/WallyFlavor" value="<string name='Units/Necrons/WallyFlavor'/>"/>
+	<entry name="Eldar/Bonesinger" value="<string name='Units/Eldar/Bonesinger'/>"/>
+	<entry name="Eldar/BonesingerDescription" value="<string name='Units/Eldar/BonesingerDescription'/>"/>
+	<entry name="Eldar/BonesingerFlavor" value="<string name='Units/Eldar/BonesingerFlavor'/>"/>
+	<entry name="Tyranids/PurestrainGenestealer" value="<string name='Units/Tyranids/PurestrainGenestealer'/>"/>
+	<entry name="Tyranids/PurestrainGenestealerDescription" value="<string name='Units/Tyranids/PurestrainGenestealerDescription'/>"/>
+	<entry name="Tyranids/PurestrainGenestealerFlavor" value="<string name='Units/Tyranids/PurestrainGenestealerFlavor'/>"/>
+	<entry name="Tyranids/VenomBrood" value="<string name='Units/Tyranids/VenomBrood'/>"/>
+	<entry name="Tyranids/VenomBroodDescription" value="<string name='Units/Tyranids/VenomBroodDescription'/>"/>
+	<entry name="Tyranids/VenomBroodFlavor" value="<string name='Units/Tyranids/VenomBroodFlavor'/>"/>
+	<entry name="SpaceMarines/Moses" value="<string name='Units/SpaceMarines/Moses'/>"/>
+	<entry name="SpaceMarines/MosesDescription" value="<string name='Units/SpaceMarines/MosesDescription'/>"/>
+	<entry name="SpaceMarines/MosesFlavor" value="<string name='Units/SpaceMarines/MosesFlavor'/>"/>
+	<entry name="AstraMilitarum/AquilaMacroCannon" value="<string name='Units/AstraMilitarum/AquilaMacroCannon'/>"/>
+	<entry name="AstraMilitarum/AquilaMacroCannonDescription" value="<string name='Units/AstraMilitarum/AquilaMacroCannonDescription'/>"/>
+	<entry name="AstraMilitarum/AquilaMacroCannonFlavor" value="<string name='Units/AstraMilitarum/AquilaMacroCannonFlavor'/>"/>
+	<entry name="AstraMilitarum/Squats" value="<string name='Units/AstraMilitarum/Squats'/>"/>
+	<entry name="AstraMilitarum/SquatsDescription" value="<string name='Units/AstraMilitarum/SquatsDescription'/>"/>
+	<entry name="AstraMilitarum/SquatsFlavor" value="<string name='Units/AstraMilitarum/SquatsFlavor'/>"/>
+
+	<entry name="Orks/MoreBoyz" value="MOOOOOOORE BOOOOOOOOOOYZ"/>
+	<entry name="Orks/MoreBoyzDescription" value="So a grot gave me an idea... what if we stop eatin' all da squigs dat grow under dese shrooms an' let 'em grow inta even MORE BOYZ FER DA WAAAAAAAAAAAAGH?"/>
+	<entry name="SpaceMarines/MarineAmbush" value="Tactical Ambush"/>
+	<entry name="SpaceMarines/MarineAmbushDescription" value="This unit is prepared to launch an ambush against any nearby interlopers."/>
+
+</language>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+
+	<entry name="OrkEarthshakerCannon" value="Looted Earthshaker Cannon"/>
+	<entry name="OrkEarthshakerCannonFlavor" value="This once holy armament of the emperor is now covered in unnecessary armor and has been distorted to a large size. The most concerning bit is that the only controls the orks thought to install were one big red shiny button."/>
+	<entry name="DacSporeMineLauncher" value="Heavy Spore Mine Launcher"/>
+	<entry name="DacSporeMineLauncherFlavor" value="A cannon capable of shooting spore mines the size of a Leman Russ tank."/>
+	<entry name="GromHammer" value="Grom's Axe"/>
+	<entry name="GromHammerFlavor" value="This comically disproportionate weapon is swung with devastating power by its obese wielder."/>
+	<entry name="JCJuicer" value="Jay Kordich's Juicer"/>
+	<entry name="JCJuicerFlavor" value="Swiftly turns unarmored targets into their liquid states."/>
+	<entry name="DaddysEviscerator" value="Daddy's Eviscerator"/>
+	<entry name="DaddysEvisceratorFlavor" value="'Like a chainsword, except a great chainsword.' - Daddy G"/>
+	<entry name="ManicSpasm" value="Manic Spasm"/>
+	<entry name="ManicSpasmFlavor" value="Sometimes Dot just decides that the amount of attention she is recieving is insufficient. You best hope you're not around when she does."/>
+	<entry name="DeceitfulApproach" value="Deceitful Approach"/>
+	<entry name="DeceitfulApproachFlavor" value="Sometimes Dot thinks she is very sneaky. She will sit down unthreateningly at the foot of your bed, then tear everything between you and her to shreds until your arm is up next."/>
+	<entry name="CrotchCharge" value="Crotch Charge"/>
+	<entry name="CrotchChargeFlavor" value="Bo likes to surprise his enemies with a merciless charge to their genitalia. It is his way of asserting his dominance over the lower torso groined bipedal humanoids."/>
+	<entry name="NinjaLick" value="Ninja Lick"/>
+	<entry name="NinjaLickFlavor" value="Bo is an expert at ambushing his enemies with a devastating surprise lick to any part of their unfortunately forms."/>
+	<entry name="AttentionJump" value="Attention Jump"/>
+	<entry name="AttentionJumpFlavor" value="In a bid to size you up and get your attention, Bo will vicisously dig his claws (which he never lets trimmed) into whatever portion of your body he can reach; bringing even the highest enemies low."/>
+	<entry name="Java.EXT.phySX.JavaFX.EXCEPTION.CAUGHTExceptION.ArrayIndexOutOfBoundsException" value="Java.EXT.phySX.JavaFX.EXCEPTION.CAUGHTExceptION.ArrayIndexOutOfBoundsException"/>
+	<entry name="Java.EXT.phySX.JavaFX.EXCEPTION.CAUGHTExceptION.ArrayIndexOutOfBoundsExceptionFlavor" value="ExceptionCaught.112.PhysXInteraction.World.Ground.StackOverflow.ArrayIndexOutOfBoundsException: Segmentation fault."/>
+	<entry name="SlingshotBigRock" value="Slingshot (Big Rock)"/>
+	<entry name="SlingshotBigRockFlavor" value="Fires an impossibly large rock from an impossibly strong slingshot. It won't penetrate parts of a vehicle, but the crew had better hope it doesn't land on them."/>
+	<entry name="WitheringStare" value="Withering Stare"/>
+	<entry name="WitheringStareFlavor" value="As a naturally evolved anti-dog creature, the Withering Stare became the weapon of choice."/>
+	<entry name="AnkleBite" value="Anti-Singing Ankle Bite"/>
+	<entry name="AnkleBiteFlavor" value="If the enemy starts singing a hymn of battle, Moses is happy to offer some critique."/>
+	<entry name="SonicBlaster" value="Sonic Blaster"/>
+	<entry name="SonicBlasterFlavor" value="This anti-infantry devestator uses the power of Slaanesh's glorius cacophony to blast the very flesh from their enemies brittle frames."/>
+</language>
