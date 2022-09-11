@@ -39,5 +39,7 @@
 	<entry name="AstraMilitarum/ConstructAquilaMacroCannonFlavor" value="<string name='Units/AstraMilitarum/AquilaMacroCannonFlavor'/>"/>
 	<entry name="DigTrenches" value="Dig Trenches"/>
 	<entry name="DigTrenchesFalvor" value="For seven terrible years the Siege regiments of the Imperial Guard carried out their onerous duty, manning the hundreds of miles of trenches and fortified positions that served to contain the arch-heretic’s forces. Success was measured in yards of ground gained, and every inch of that deadly ground was bought with the blood and lives of men. - From the official history of the Kaiserschlect Campaign, M41.745"/>
-
+	<entry name="Tau/Spotting" value="Spotting"/>
+	<entry name="Tau/SpottingDescription" value="Cadre Fireblade is providing recon data to nearby units."/>
+	<entry name="Tau/SpottingFlavor" value="The Cadre Fireblade waits among the terrain for the enemy to come within his line of sight."/>
 </language>

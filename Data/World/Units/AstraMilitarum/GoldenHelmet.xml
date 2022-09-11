@@ -15,10 +15,9 @@
 	<weapons>
 		<weapon name="Chainsword">
 			<model>
-				<weapon mesh="Weapons/AstraMilitarum/LordCommissarSword"
-						material="Weapons/AstraMilitarum/LordCommissarSword"
-						bone="LeftHand"
-						fireInterval="1.0"/>
+				<weapon mesh="Weapons/SpaceMarines/Chainsword"
+						material="Weapons/SpaceMarines/Chainsword"
+						bone="LeftHandBone"/>
 			</model>
 		</weapon>
 		<weapon name="FragGrenade" slotName="FragGrenade" enabled="0">
