@@ -113,6 +113,7 @@
 				</selfTarget>
 			</beginTargets>
 		</psychicScream>
+		<shop/>
 	</actions>
 	<traits>
 		<trait name="Fleet"/>

@@ -81,6 +81,7 @@
 						soundCount="4"/>
 			</model>
 		</move>
+		<shop/>
 	</actions>
 	<traits>
 		<trait name="Infiltrate"/>

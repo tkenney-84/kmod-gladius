@@ -217,6 +217,7 @@
 				</target>
 			</beginTargets>
 		</incursion>
+		<shop/>
 	</actions>
 	<traits>
 		<trait name="AdeptusMechanicus/CanticlesOfTheOmnissiah"/>

@@ -8,14 +8,14 @@
 		<modifier>
 			<effects>
 				<attacks add="1"/>
-				<rangedArmorPenetration add="12"/> <!-- %rangedArmorPenetration add armorPiercing=3 -->
-				<rangedDamage add="15"/> <!-- %rangedDamage add strength=8 -->
+				<rangedArmorPenetration add="6"/> <!-- %rangedArmorPenetration add armorPiercing=3 -->
+				<rangedDamage add="10"/> <!-- %rangedDamage add strength=8 -->
 			</effects>
 		</modifier>
 	</modifiers>
 	<traits>
 		<trait name="HeavyWeapon"/>
 		<trait name="IgnoresCover"/>
-		<trait name="Armourbane"/>
+		<trait name="ApocalypticBlast"/>
 	</traits>
 </weapon>

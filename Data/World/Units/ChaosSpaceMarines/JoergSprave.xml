@@ -72,7 +72,7 @@
 			<model>
 				<action animation="Units/ChaosSpaceMarines/HavocAttack"
 						beginFire="0.83"
-						endFire="1.098"/>
+						endFire="2.17"/>
 			</model>				
 		</attack>
 		<die>
@@ -119,6 +119,7 @@
 						beginFire="1.17"/>
 			</model>				
 		</throwGrenade>
+		<shop/>
 	</actions>
 	<traits>
 		<trait name="ChaosSpaceMarines/ChampionOfChaos"/>

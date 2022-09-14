@@ -192,6 +192,7 @@
 				</selfTarget>
 			</beginTargets>
 		</auraOfFear>
+		<shop/>
 	</actions>
 	<traits>
 		<trait name="Necrons/AttackCityBonus" requiredUpgrade="Necrons/AttackCityBonus"/>

@@ -193,6 +193,7 @@
 				</target>
 			</beginTargets>
 		</genericUnitAbility>
+		<shop/>
 	</actions>
 	<traits>
 		<trait name="AndTheyShallKnowNoFear"/>
