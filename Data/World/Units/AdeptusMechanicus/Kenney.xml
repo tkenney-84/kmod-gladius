@@ -21,7 +21,7 @@
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="16"/> <!-- %armor base armor=3+ -->
+				<armor base="8"/> <!-- %armor base armor=3+ -->
 				<foodUpkeep base="2.0"/> <!-- %foodUpkeep base tier=6 factor=1 -->
 				<foodCost base="80.0"/> <!-- %foodCost base tier=6 factor=0.5 -->
 				<hitpointsMax base="6.0"/> <!-- %hitpointsMax base toughness=4 wounds=2 -->

@@ -316,7 +316,7 @@
 			<modifiers>
 				<modifier requiredUpgrade="Tau/ForTheGreaterGoodBonus">
 					<effects>
-						<influenceCost mul="-0.33"/>
+						<influenceCost mul="-0.23"/>
 					</effects>
 				</modifier>
 			</modifiers>
@@ -333,7 +333,7 @@
 							<modifiers>
 								<modifier>
 									<effects>
-										<morale max="0"/>
+										<morale mul="-0.67"/>
 									</effects>
 								</modifier>
 							</modifiers>
