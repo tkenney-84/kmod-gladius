@@ -9,7 +9,7 @@
 				</unit>
 			</conditions>
 			<effects>
-				<morale add="1"/>
+				<movementMax add="1"/>
 			</effects>
 		</modifier>
 	</modifiers>

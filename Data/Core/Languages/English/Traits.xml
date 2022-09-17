@@ -18,7 +18,9 @@
 	<entry name="Ambush" value="Ambush"/>
 	<entry name="AmbushDescription" value="This unit is prepared to launch an ambush on any enemies who come near."/>
 	<entry name="SpaceMarines/HealingPurr" value="Healing Purr"/>
-	<entry name="SpaceMarines/HealingPurrDescription" value="This unit is experiencing the healing effects of the nearby felinid."/>
+	<entry name="SpaceMarines/HealingPurrDescription" value="This unit is experiencing the mental healing effects of the nearby felinid."/>
+	<entry name="SpaceMarines/FelineDexterity" value="Feline Dexterity"/>
+	<entry name="SpaceMarines/FelineDexterityDescription" value="This unit has been graced with improved kinesthetic intelligence."/>
 	<entry name="SpaceMarines/Reorganizing" value="Reorganizing"/>
 	<entry name="SpaceMarines/ReorganizingDescription" value="While orbital deployment has significant benefits in terms of mobility and surprise, the pods are not exactly accurate. This unit is reorganizing themselves after a drop."/>
 	<entry name="ChaosSpaceMarines/Blighting" value="Blighting"/>

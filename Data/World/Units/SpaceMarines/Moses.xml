@@ -31,7 +31,7 @@
 	<modifiers>
 		<modifier visible="0">
 			<effects>
-				<armor base="2"/> <!-- %armor base armor=2+ -->
+				<armor base="6"/> <!-- %armor base armor=2+ -->
 				<hitpointsMax base="16.0"/> <!-- %hitpointsMax base toughness=5 wounds=2 -->
 				<meleeAccuracy base="12"/> <!-- %meleeAccuracy base weaponSkill=4 -->
 				<meleeAttacks base="1"/>
@@ -42,9 +42,9 @@
 				<levelMax base="9"/>
 				<productionCost base="38.0"/> <!-- %productionCost base tier=9 factor=1 -->
 				<rangedAccuracy base="8"/> <!-- %rangedAccuracy base ballisticSkill=4 -->
-				<requisitionsUpkeep base="6.0"/> <!-- %requisitionsUpkeep base tier=9 factor=1 -->
+				<requisitionsUpkeep base="4.0"/> <!-- %requisitionsUpkeep base tier=9 factor=1 -->
 				<requisitionsCost base="120.0"/> <!-- %requisitionsCost base tier=9 factor=1 -->
-				<influenceUpkeep base="8"/> <!-- %influenceUpkeep base tier=6 factor=2 -->
+				<influenceUpkeep base="6"/> <!-- %influenceUpkeep base tier=6 factor=2 -->
 				<influenceCost base="80.0"/> <!-- %influenceCost base tier=6 factor=2 -->
 			</effects>
 		</modifier>
@@ -126,7 +126,7 @@
 			<beginTargets>
 				<selfTarget>
 					<areas>
-						<area affects="Tile" radius="1">
+						<area affects="Tile" radius="2">
 							<modifiers>
 								<modifier>
 									<effects>
@@ -172,7 +172,7 @@
 				<action	sound="Actions/Heal"/>
 			</model>
 			<beginTargets>
-				<target rangeMax="1">
+				<selfTarget>
 					<conditions>
 						<unit>
 							<allied/>
@@ -180,17 +180,17 @@
 						</unit>
 					</conditions>
 					<areas>
-						<area affects="Unit">
+						<area affects="Tile" radius="1">
 							<modifiers>
 								<modifier>
 									<effects>
-										<morale mul="10"/>
+										<addTrait duration="1" name="SpaceMarines/FelineDexterity"/>
 									</effects>
 								</modifier>
 							</modifiers>
 						</area>
 					</areas>
-				</target>
+				</selfTarget>
 			</beginTargets>
 		</genericUnitAbility>
 		<shop/>

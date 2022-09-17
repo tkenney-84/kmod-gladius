@@ -26,14 +26,14 @@
 	<entry name="Necrons/WallyWhipDescription" value="Disorients the selected enemy unit, giving them the 'Blind' trait for 2 turns."/>
 	<entry name="Necrons/WallyWhipFlavor" value="Wally has a strange skill, where he can sneak up on enemies, and bat them in the eyes with his tail, effectively blinding them."/>
 	<entry name="SpaceMarines/HealingPurr" value="Healing Purr"/>
-	<entry name="SpaceMarines/HealingPurrDescription" value="Heals nearby allies with a mystic frequency of purring."/>
+	<entry name="SpaceMarines/HealingPurrDescription" value="Restores nearby allies' morale with a mystic frequency of purring."/>
 	<entry name="SpaceMarines/HealingPurrFlavor" value="Moses has a purr that can be heard across Gladius. It is so powerful, it can heal the wounds of those around him."/>
 	<entry name="SpaceMarines/FelineBlubber" value="Feline Blubber"/>
 	<entry name="SpaceMarines/FelineBlubberDescription" value="Grants the 'Iron Halo' trait to the selected allied unit."/>
 	<entry name="SpaceMarines/FelineBlubberFlavor" value="Moses can selflessly sacrifice a roll of feline fat to protect his beloved allies."/>
-	<entry name="SpaceMarines/SupportAnimal" value="Unlicensed Support Animal"/>
-	<entry name="SpaceMarines/SupportAnimalDescription" value="Instantly restores the morale of the selected allied unit."/>
-	<entry name="SpaceMarines/SupportAnimalFlavor" value="Although Moses is not a LICENSED support animal, they make a very good mammalian therapist."/>
+	<entry name="SpaceMarines/SupportAnimal" value="Feline Dexterity"/>
+	<entry name="SpaceMarines/SupportAnimalDescription" value="Grants additional movement to adjacent allied units."/>
+	<entry name="SpaceMarines/SupportAnimalFlavor" value="Although Moses is not a LICENSED support animal, they make a very good mammalian motivator."/>
 	<entry name="AstraMilitarum/ConstructAquilaMacroCannon" value="<string name='Units/AstraMilitarum/AquilaMacroCannon'/>"/>
 	<entry name="AstraMilitarum/ConstructAquilaMacroCannonDescription" value="<string name='Units/AstraMilitarum/AquilaMacroCannonDescription'/>"/>
 	<entry name="AstraMilitarum/ConstructAquilaMacroCannonFlavor" value="<string name='Units/AstraMilitarum/AquilaMacroCannonFlavor'/>"/>

@@ -131,8 +131,7 @@
 			<modifiers>
 				<modifier visible="0">
 					<effects>
-						<influenceCost base="200"/>
-						<addTrait name="SpaceMarines/Reorganizing" duration="2"/>
+						<influenceCost base="180"/>
 					</effects>
 				</modifier>
 			</modifiers>

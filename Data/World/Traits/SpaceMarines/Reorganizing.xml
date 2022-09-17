@@ -5,7 +5,7 @@
 			<effects>
 				<attacks mul="-0.5"/>
 				<hitpointsMax mul="-0.5"/>
-				<movementMax base="1"/>
+				<movementMax max="1"/>
 			</effects>
 		</modifier>
 	</modifiers>
