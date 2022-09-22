@@ -249,7 +249,8 @@
 		<trait name="Hero"/>
 		<trait name="LastStand" requiredUpgrade="SpaceMarines/LastStand"/>
 		<trait name="Relentless"/>
-		<trait name="Rosarius"/>
+		<!-- <trait name="Rosarius"/> -->
+		<trait name="CombatShield"/>
 		<trait name="TerminatorArmour"/>
 		<trait name="Zealot"/>
 	</traits>

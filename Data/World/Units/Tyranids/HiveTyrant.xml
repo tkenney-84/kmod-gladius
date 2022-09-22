@@ -370,7 +370,6 @@
 		<trait name="Relentless"/>
 		<trait name="Smash"/>
 		<trait name="Tyranids/ToxinSacs" requiredUpgrade="Tyranids/ToxinSacs"/>
-		<trait name="Psyker"/>
 		<trait name="Tyranids/VehiclesUpkeep" requiredUpgrade="Tyranids/VehiclesUpkeep"/>
 	</traits>
 </unit>
