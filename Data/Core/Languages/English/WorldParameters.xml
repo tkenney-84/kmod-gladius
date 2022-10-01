@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+	<entry name="Difficulty0LeaguesOfVotann" value="Abhuman"/>
+	<entry name="Difficulty1LeaguesOfVotann" value="Kin"/>
+	<entry name="Difficulty2LeaguesOfVotann" value="Ironkin"/>
+	<entry name="Difficulty3LeaguesOfVotann" value="Squat"/>
+	<entry name="Difficulty4LeaguesOfVotann" value="Guild Master"/>
+	<entry name="Difficulty5LeaguesOfVotann" value="League Master"/>
+	<entry name="Difficulty6LeaguesOfVotann" value="Ancestor Core"/>
+</language>

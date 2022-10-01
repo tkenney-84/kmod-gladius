@@ -68,4 +68,12 @@
 	<entry name="AstraMilitarum/SquatsDescription" value="In war, the Squats used squads of motorcycles supported by massive artillery barrages from outlandishly large super-heavy tracked vehicles."/>
 	<entry name="AstraMilitarum/SquatsFlavor" value="Do not underestimate the Squats. They survived for millennia cut off from the Imperium and assailed from all sides. Their determination and resilience is an example to all."/>
 
+	<!-- LEAGUES OF VOTANN UNITS -->
+	<entry name="LeaguesOfVotann/BrokhyrIronMaster" value="Brokhyr Iron-Master"/>
+	<entry name="LeaguesOfVotann/BrokhyrIronMasterDescription" value="PLACEHOLDER"/>
+	<entry name="LeaguesOfVotann/BrokhyrIronMasterFlavor" value="PLACEHOLDER"/>
+	<entry name="LeaguesOfVotann/HearthkynWarriors" value="Hearthkyn Warriors"/>
+	<entry name="LeaguesOfVotann/HearthkynWarriorsDescription" value="PLACEHOLDER"/>
+	<entry name="LeaguesOfVotann/HearthkynWarriorsFlavor" value="PLACEHOLDER"/>
+
 </language>

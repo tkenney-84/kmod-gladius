@@ -30,4 +30,9 @@
 	<entry name="Tau/Spotting" value="Spotting"/>
 	<entry name="Tau/SpottingDescription" value="Unit is receiving spotting support from a nearby Cadre Fireblade."/>
 
+	<!-- LEAGUES OF VOTANN TRAITS. -->
+
+	<entry name="LeaguesOfVotann/VoidArmor" value="Void Armor"/>
+	<entry name="LeaguesOfVotann/VoidArmorDescription" value="Increases damage reduction."/>
+
 </language>
