@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material>
+	<textures>
+		<texture name="Buildings/AstraMilitarum/BuildingsDiffuse"/>
+		<texture name="Buildings/AstraMilitarum/BuildingsNormal"/>
+		<texture name="Buildings/AstraMilitarum/BuildingsSIC"/>
+		<texture name="ShadowMapColor"/>
+	</textures>
+</material>
